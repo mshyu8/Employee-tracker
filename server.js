@@ -279,7 +279,7 @@ function showOptions() {
                     };
                 };
 
-                db.query(`INSET INTO role (title, salary, department_id) VALUE ('${role}', '${salary}', '${department}')`, async (err, results) => {
+                db.query(`INSERT INTO role (title, salary, department_id) VALUE ('${role}', '${salary}', '${department}')`, async (err, results) => {
                     
                     await showOptions();
                 });
